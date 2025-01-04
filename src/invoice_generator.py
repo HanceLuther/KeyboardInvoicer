@@ -23,7 +23,7 @@ class InvoicePDFGenerator:
         self.elements = []
 
     def add_header(self, company_name):
-        # Add company name
+        # At this section we are going to add company name
         header_style = ParagraphStyle(
             'CustomHeader',
             parent=self.styles['Heading1'],
@@ -33,7 +33,7 @@ class InvoicePDFGenerator:
         )
         self.elements.append(Paragraph(company_name, header_style))
         
-        # Add Invoice title
+        # At this section we are going to add Invoice title
         title_style = ParagraphStyle(
             'InvoiceTitle',
             parent=self.styles['Heading1'],
@@ -232,6 +232,7 @@ class InvoiceGame:
                 
             rate = self.get_validated_input("Enter rate ($): ", "number")
             amount = rate  # In this case amount equals rate, but you could make it different
+                           # if you have any advice on how to enhance this you are kindly welcome. 
             
             items.append({
                 'description': description,

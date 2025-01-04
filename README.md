@@ -16,7 +16,7 @@ A keyboard-centric, interactive CLI tool for generating professional PDF invoice
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/KeyboardInvoicer.git
+git clone https://github.com/HanceLuther/KeyboardInvoicer.git
 cd KeyboardInvoicer
 ```
 
@@ -61,7 +61,7 @@ KeyboardInvoicer/
 ├── requirements.txt
 ├── src/
 │   └── invoice_generator.py
-└── examples/
+└── output/
     └── sample_invoice.pdf
 ```
 
